@@ -47,6 +47,10 @@ binutils bzip2 diff find flex gawk gcc-6+ getopt grep install libc-dev libz-dev
 make4.1+ perl python3.7+ rsync subversion unzip which
 ```
 
+sudo apt install build-essential clang flex g++ gawk gcc-multilib gettext \
+  git libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev
+
+
 ### Quickstart
 
 1. Run `./scripts/feeds update -a` to obtain all the latest package definitions
