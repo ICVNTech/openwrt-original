@@ -34,3 +34,4 @@ git-src
 .ccache
 .vscode*
 myenv/
+feeds.conf.default
