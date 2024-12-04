@@ -35,3 +35,4 @@ git-src
 .vscode*
 myenv/
 feeds.conf.default
+feeds.conf.default
