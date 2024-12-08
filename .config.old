@@ -441,7 +441,7 @@ CONFIG_EXTRA_OPTIMIZATION="-fno-caller-saves -fno-plt"
 # CONFIG_GLINET_L2TP is not set
 # end of Select VPN
 
-# CONFIG_GLINET_STORAGE is not set
+CONFIG_GLINET_STORAGE=y
 CONFIG_GLINET_USB=y
 CONFIG_GLINET_WEBCAM=y
 CONFIG_GLINET_RTC=y
@@ -492,6 +492,7 @@ CONFIG_FEED_luci=y
 CONFIG_FEED_routing=y
 CONFIG_FEED_telephony=y
 CONFIG_FEED_gli_pub=y
+CONFIG_FEED_Application=y
 
 #
 # Base system
@@ -1986,7 +1987,7 @@ CONFIG_PACKAGE_kmod-crypto-arc4=y
 # CONFIG_PACKAGE_kmod-crypto-cbc is not set
 # CONFIG_PACKAGE_kmod-crypto-ccm is not set
 # CONFIG_PACKAGE_kmod-crypto-cmac is not set
-# CONFIG_PACKAGE_kmod-crypto-crc32c is not set
+CONFIG_PACKAGE_kmod-crypto-crc32c=y
 # CONFIG_PACKAGE_kmod-crypto-ctr is not set
 # CONFIG_PACKAGE_kmod-crypto-cts is not set
 # CONFIG_PACKAGE_kmod-crypto-deflate is not set
@@ -2037,9 +2038,9 @@ CONFIG_PACKAGE_kmod-crypto-sha1=y
 # CONFIG_PACKAGE_kmod-fs-cifs is not set
 # CONFIG_PACKAGE_kmod-fs-configfs is not set
 # CONFIG_PACKAGE_kmod-fs-cramfs is not set
-# CONFIG_PACKAGE_kmod-fs-exfat is not set
+CONFIG_PACKAGE_kmod-fs-exfat=y
 # CONFIG_PACKAGE_kmod-fs-exportfs is not set
-# CONFIG_PACKAGE_kmod-fs-ext4 is not set
+CONFIG_PACKAGE_kmod-fs-ext4=y
 # CONFIG_PACKAGE_kmod-fs-f2fs is not set
 # CONFIG_PACKAGE_kmod-fs-fscache is not set
 # CONFIG_PACKAGE_kmod-fs-hfs is not set
@@ -2055,13 +2056,13 @@ CONFIG_PACKAGE_kmod-crypto-sha1=y
 # CONFIG_PACKAGE_kmod-fs-nfs-v3 is not set
 # CONFIG_PACKAGE_kmod-fs-nfs-v4 is not set
 # CONFIG_PACKAGE_kmod-fs-nfsd is not set
-# CONFIG_PACKAGE_kmod-fs-ntfs is not set
+CONFIG_PACKAGE_kmod-fs-ntfs=y
 # CONFIG_PACKAGE_kmod-fs-reiserfs is not set
 # CONFIG_PACKAGE_kmod-fs-squashfs is not set
 # CONFIG_PACKAGE_kmod-fs-udf is not set
-# CONFIG_PACKAGE_kmod-fs-vfat is not set
+CONFIG_PACKAGE_kmod-fs-vfat=y
 # CONFIG_PACKAGE_kmod-fs-xfs is not set
-# CONFIG_PACKAGE_kmod-fuse is not set
+CONFIG_PACKAGE_kmod-fuse=y
 # end of Filesystems
 
 #
@@ -2195,7 +2196,7 @@ CONFIG_PACKAGE_kmod-input-core=y
 # CONFIG_PACKAGE_kmod-lib-cordic is not set
 CONFIG_PACKAGE_kmod-lib-crc-ccitt=y
 # CONFIG_PACKAGE_kmod-lib-crc-itu-t is not set
-# CONFIG_PACKAGE_kmod-lib-crc16 is not set
+CONFIG_PACKAGE_kmod-lib-crc16=y
 # CONFIG_PACKAGE_kmod-lib-crc32c is not set
 # CONFIG_PACKAGE_kmod-lib-crc7 is not set
 # CONFIG_PACKAGE_kmod-lib-crc8 is not set
@@ -2210,7 +2211,7 @@ CONFIG_PACKAGE_kmod-lib-crc-ccitt=y
 CONFIG_PACKAGE_kmod-nls-base=y
 # CONFIG_PACKAGE_kmod-nls-cp1250 is not set
 # CONFIG_PACKAGE_kmod-nls-cp1251 is not set
-# CONFIG_PACKAGE_kmod-nls-cp437 is not set
+CONFIG_PACKAGE_kmod-nls-cp437=y
 # CONFIG_PACKAGE_kmod-nls-cp775 is not set
 # CONFIG_PACKAGE_kmod-nls-cp850 is not set
 # CONFIG_PACKAGE_kmod-nls-cp852 is not set
@@ -2220,14 +2221,14 @@ CONFIG_PACKAGE_kmod-nls-base=y
 # CONFIG_PACKAGE_kmod-nls-cp932 is not set
 # CONFIG_PACKAGE_kmod-nls-cp936 is not set
 # CONFIG_PACKAGE_kmod-nls-cp950 is not set
-# CONFIG_PACKAGE_kmod-nls-iso8859-1 is not set
+CONFIG_PACKAGE_kmod-nls-iso8859-1=y
 # CONFIG_PACKAGE_kmod-nls-iso8859-13 is not set
 # CONFIG_PACKAGE_kmod-nls-iso8859-15 is not set
 # CONFIG_PACKAGE_kmod-nls-iso8859-2 is not set
 # CONFIG_PACKAGE_kmod-nls-iso8859-6 is not set
 # CONFIG_PACKAGE_kmod-nls-iso8859-8 is not set
 # CONFIG_PACKAGE_kmod-nls-koi8r is not set
-# CONFIG_PACKAGE_kmod-nls-utf8 is not set
+CONFIG_PACKAGE_kmod-nls-utf8=y
 # end of Native Language Support
 
 #
@@ -2812,6 +2813,7 @@ CONFIG_PACKAGE_kmod-rt2x00-usb=y
 # CONFIG_PACKAGE_kmod-rtl8192de is not set
 # CONFIG_PACKAGE_kmod-rtl8192se is not set
 # CONFIG_PACKAGE_kmod-rtl8723bs is not set
+# CONFIG_PACKAGE_kmod-rtl8812au is not set
 # CONFIG_PACKAGE_kmod-rtl8812au-ct is not set
 # CONFIG_PACKAGE_kmod-rtl8821ae is not set
 # CONFIG_PACKAGE_kmod-rtl8xxxu is not set
@@ -2954,6 +2956,7 @@ CONFIG_GOLANG_BUILD_CACHE_DIR=""
 # Python
 #
 # CONFIG_PACKAGE_libpython3 is not set
+# CONFIG_PACKAGE_lv_micropython is not set
 # CONFIG_PACKAGE_micropython is not set
 # CONFIG_PACKAGE_micropython-lib is not set
 # CONFIG_PACKAGE_python-pip-conf is not set
@@ -3908,7 +3911,7 @@ CONFIG_PACKAGE_libusbmuxd=y
 # CONFIG_PACKAGE_libavahi-dbus-support is not set
 # CONFIG_PACKAGE_libavahi-nodbus-support is not set
 # CONFIG_PACKAGE_libbfd is not set
-# CONFIG_PACKAGE_libblkid is not set
+CONFIG_PACKAGE_libblkid=y
 CONFIG_PACKAGE_libblobmsg-json=y
 # CONFIG_PACKAGE_libbpf is not set
 # CONFIG_PACKAGE_libbsd is not set
@@ -3968,6 +3971,7 @@ CONFIG_PACKAGE_libblobmsg-json=y
 # CONFIG_PACKAGE_libfido2 is not set
 # CONFIG_PACKAGE_libflac is not set
 # CONFIG_PACKAGE_libfmt is not set
+# CONFIG_PACKAGE_libfreefare is not set
 # CONFIG_PACKAGE_libfreetype is not set
 # CONFIG_PACKAGE_libfstrm is not set
 # CONFIG_PACKAGE_libftdi is not set
@@ -4055,6 +4059,7 @@ CONFIG_PACKAGE_libjson-c=y
 # CONFIG_PACKAGE_libnetsnmp is not set
 # CONFIG_PACKAGE_libnettle is not set
 # CONFIG_PACKAGE_libnewt is not set
+# CONFIG_PACKAGE_libnfc is not set
 # CONFIG_PACKAGE_libnfnetlink is not set
 # CONFIG_PACKAGE_libnftnl is not set
 # CONFIG_PACKAGE_libnghttp2 is not set
@@ -4199,7 +4204,7 @@ CONFIG_PACKAGE_libusb-compat=y
 # CONFIG_PACKAGE_libustream-mbedtls is not set
 # CONFIG_PACKAGE_libustream-openssl is not set
 CONFIG_PACKAGE_libustream-wolfssl=y
-# CONFIG_PACKAGE_libuuid is not set
+CONFIG_PACKAGE_libuuid=y
 # CONFIG_PACKAGE_libuv is not set
 # CONFIG_PACKAGE_libuwifi is not set
 # CONFIG_PACKAGE_libv4l is not set
@@ -4753,6 +4758,7 @@ CONFIG_PACKAGE_iptables=y
 #
 # Firewall Tunnel
 #
+# CONFIG_PACKAGE_httptunnel is not set
 # CONFIG_PACKAGE_iodine is not set
 # CONFIG_PACKAGE_iodined is not set
 # end of Firewall Tunnel
@@ -4935,6 +4941,12 @@ CONFIG_PACKAGE_iptables=y
 # CONFIG_PACKAGE_oonf-init-scripts is not set
 # CONFIG_PACKAGE_oonf-olsrd2 is not set
 # end of OLSR.org network framework
+
+#
+# Onion
+#
+# CONFIG_PACKAGE_onion-service is not set
+# end of Onion
 
 #
 # Open vSwitch
@@ -5516,7 +5528,8 @@ CONFIG_PACKAGE_ppp-mod-pppoe=y
 # CONFIG_PACKAGE_samba36-client is not set
 # CONFIG_PACKAGE_samba36-hotplug is not set
 # CONFIG_PACKAGE_samba36-net is not set
-# CONFIG_PACKAGE_samba36-server is not set
+CONFIG_PACKAGE_samba36-server=y
+CONFIG_PACKAGE_SAMBA_MAX_DEBUG_LEVEL=-1
 # CONFIG_PACKAGE_samba4-admin is not set
 # CONFIG_PACKAGE_samba4-client is not set
 # CONFIG_PACKAGE_samba4-libs is not set
@@ -5530,6 +5543,7 @@ CONFIG_PACKAGE_ppp-mod-pppoe=y
 # CONFIG_PACKAGE_seafile-server is not set
 # CONFIG_PACKAGE_seafile-server-fuse is not set
 # CONFIG_PACKAGE_ser2net is not set
+# CONFIG_PACKAGE_shellinabox is not set
 # CONFIG_PACKAGE_simple-adblock is not set
 # CONFIG_PACKAGE_smartdns is not set
 # CONFIG_PACKAGE_smbinfo is not set
@@ -5582,6 +5596,146 @@ CONFIG_PACKAGE_wwan=y
 # CONFIG_PACKAGE_xinetd is not set
 # CONFIG_PACKAGE_xray-core is not set
 # end of Network
+
+#
+# Onion
+#
+
+#
+# Base system
+#
+# CONFIG_PACKAGE_omega2-base is not set
+CONFIG_PACKAGE_omega2-lte-base=y
+# CONFIG_PACKAGE_omega2-usb-autorun is not set
+# CONFIG_PACKAGE_onion-repo-keys is not set
+# end of Base system
+
+#
+# Console
+#
+# CONFIG_PACKAGE_console-install-tool is not set
+# CONFIG_PACKAGE_node-red-install-tool is not set
+# CONFIG_PACKAGE_onion-console-base is not set
+# CONFIG_PACKAGE_onion-console-editor is not set
+# CONFIG_PACKAGE_onion-console-node-red is not set
+# CONFIG_PACKAGE_onion-console-terminal is not set
+# CONFIG_PACKAGE_onion-console-webcam is not set
+# CONFIG_PACKAGE_transmission-console-app is not set
+# end of Console
+
+#
+# Drivers
+#
+# CONFIG_PACKAGE_ads1x15-chip is not set
+# CONFIG_PACKAGE_i2c-exp-ubus is not set
+# CONFIG_PACKAGE_oled-exp is not set
+# CONFIG_PACKAGE_power-dock is not set
+# CONFIG_PACKAGE_power-dock2 is not set
+# CONFIG_PACKAGE_pwm-exp is not set
+# CONFIG_PACKAGE_relay-exp is not set
+# end of Drivers
+
+#
+# Libraries
+#
+# CONFIG_PACKAGE_blynk-library is not set
+# CONFIG_PACKAGE_libduktape is not set
+# CONFIG_PACKAGE_liboniondebug is not set
+# CONFIG_PACKAGE_libonioni2c is not set
+# CONFIG_PACKAGE_libonionmcp23008 is not set
+# CONFIG_PACKAGE_libonionneopixel is not set
+# CONFIG_PACKAGE_libonionoledexp is not set
+# CONFIG_PACKAGE_libonionpwmexp is not set
+# CONFIG_PACKAGE_libonionrelayexp is not set
+# CONFIG_PACKAGE_libonionspi is not set
+# CONFIG_PACKAGE_node-oled-exp is not set
+# CONFIG_PACKAGE_node-pwm-exp is not set
+# CONFIG_PACKAGE_node-relay-exp is not set
+# CONFIG_PACKAGE_node-usb is not set
+# CONFIG_PACKAGE_onion-sh-lib is not set
+# CONFIG_PACKAGE_onoff-node is not set
+# CONFIG_PACKAGE_pyNeopixel is not set
+# CONFIG_PACKAGE_pyOledExp is not set
+# CONFIG_PACKAGE_pyOmegaArduinoDock is not set
+# CONFIG_PACKAGE_pyOmegaExpansion is not set
+# CONFIG_PACKAGE_pyOnionGpio is not set
+# CONFIG_PACKAGE_pyOnionI2C is not set
+# CONFIG_PACKAGE_pyOnionSpi is not set
+# CONFIG_PACKAGE_pyPwmExp is not set
+# CONFIG_PACKAGE_pyRelayExp is not set
+# CONFIG_PACKAGE_python-adc-exp is not set
+# CONFIG_PACKAGE_python-spidev is not set
+# CONFIG_PACKAGE_python3-adc-exp is not set
+# CONFIG_PACKAGE_python3-oled-exp is not set
+# CONFIG_PACKAGE_python3-omega-expansion is not set
+# CONFIG_PACKAGE_python3-onion-i2c is not set
+# CONFIG_PACKAGE_python3-pwm-exp is not set
+# CONFIG_PACKAGE_python3-relay-exp is not set
+# CONFIG_PACKAGE_python3-spidev is not set
+# end of Libraries
+
+#
+# Network
+#
+CONFIG_PACKAGE_hostname-tool=y
+# CONFIG_PACKAGE_ubidots-client is not set
+# end of Network
+
+#
+# Node-RED
+#
+# CONFIG_PACKAGE_node-red-contrib-ibm-watson-iot is not set
+# end of Node-RED
+
+#
+# OS
+#
+# CONFIG_PACKAGE_onion-os is not set
+# CONFIG_PACKAGE_oos-app-code-editor is not set
+# CONFIG_PACKAGE_oos-app-legacy-console is not set
+# CONFIG_PACKAGE_oos-app-nfc-rfid-expansion is not set
+# CONFIG_PACKAGE_oos-app-power-dock-2 is not set
+# CONFIG_PACKAGE_oos-app-sparkfun-qwiic is not set
+# CONFIG_PACKAGE_oos-app-timelapse-camera is not set
+# end of OS
+
+#
+# Utilities
+#
+# CONFIG_PACKAGE_arduino-dock is not set
+# CONFIG_PACKAGE_arduino-dock-2 is not set
+CONFIG_PACKAGE_base-www=y
+# CONFIG_PACKAGE_dht-sensor is not set
+# CONFIG_PACKAGE_fast-gpio is not set
+# CONFIG_PACKAGE_gpio-test is not set
+# CONFIG_PACKAGE_neopixel-tool is not set
+# CONFIG_PACKAGE_nfc-exp is not set
+CONFIG_PACKAGE_ogps=y
+# CONFIG_PACKAGE_omega2-ctrl is not set
+# CONFIG_PACKAGE_onion-helper is not set
+# CONFIG_PACKAGE_onion-script is not set
+# CONFIG_PACKAGE_onion-ubus is not set
+# CONFIG_PACKAGE_oupgrade is not set
+# CONFIG_PACKAGE_spi-tool is not set
+# CONFIG_PACKAGE_url-enc-dec is not set
+# end of Utilities
+
+#
+# WiFi
+#
+# end of WiFi
+# end of Onion
+
+#
+# plan44
+#
+
+#
+# Utilities
+#
+# CONFIG_PACKAGE_p44ledchaintest is not set
+# end of Utilities
+# end of plan44
 
 #
 # Sound
@@ -5677,7 +5831,8 @@ CONFIG_PACKAGE_uboot-envtools=y
 #
 # Disc
 #
-# CONFIG_PACKAGE_blkid is not set
+# CONFIG_PACKAGE_blkdiscard is not set
+CONFIG_PACKAGE_blkid=y
 # CONFIG_PACKAGE_blockdev is not set
 # CONFIG_PACKAGE_cfdisk is not set
 # CONFIG_PACKAGE_cgdisk is not set
@@ -5767,7 +5922,9 @@ CONFIG_PACKAGE_uboot-envtools=y
 # CONFIG_PACKAGE_ncdu is not set
 # CONFIG_PACKAGE_nfs-utils is not set
 # CONFIG_PACKAGE_nfs-utils-libs is not set
-# CONFIG_PACKAGE_ntfs-3g is not set
+CONFIG_PACKAGE_ntfs-3g=y
+# CONFIG_PACKAGE_NTFS-3G_USE_LIBFUSE is not set
+CONFIG_PACKAGE_NTFS-3G_HAS_PROBE=y
 # CONFIG_PACKAGE_ntfs-3g-low is not set
 # CONFIG_PACKAGE_ntfs-3g-utils is not set
 # CONFIG_PACKAGE_owfs is not set
@@ -5798,6 +5955,12 @@ CONFIG_PACKAGE_uboot-envtools=y
 # CONFIG_PACKAGE_dfu-programmer is not set
 # CONFIG_PACKAGE_stm32flash is not set
 # end of Microcontroller programming
+
+#
+# Onion
+#
+# CONFIG_PACKAGE_gpioutil is not set
+# end of Onion
 
 #
 # RTKLIB Suite
@@ -5873,6 +6036,12 @@ CONFIG_PACKAGE_uboot-envtools=y
 # CONFIG_PACKAGE_zoneinfo-simple is not set
 # CONFIG_PACKAGE_zoneinfo-southamerica is not set
 # end of Zoneinfo
+
+#
+# fbida
+#
+# CONFIG_PACKAGE_fbi is not set
+# end of fbida
 
 #
 # libimobiledevice
@@ -6048,6 +6217,7 @@ CONFIG_PACKAGE_jshn=y
 # CONFIG_PACKAGE_lcdproc-server is not set
 # CONFIG_PACKAGE_less is not set
 # CONFIG_PACKAGE_less-wide is not set
+# CONFIG_PACKAGE_libfreefare-examples is not set
 CONFIG_PACKAGE_libjson-script=y
 # CONFIG_PACKAGE_libnetwork is not set
 # CONFIG_PACKAGE_libxml2-utils is not set
@@ -6084,6 +6254,7 @@ CONFIG_PACKAGE_mqtt=y
 # CONFIG_PACKAGE_netopeer2-cli is not set
 # CONFIG_PACKAGE_netopeer2-server is not set
 # CONFIG_PACKAGE_netwhere is not set
+# CONFIG_PACKAGE_nfc-utils is not set
 # CONFIG_PACKAGE_nnn is not set
 # CONFIG_PACKAGE_nsenter is not set
 # CONFIG_PACKAGE_nss-utils is not set
